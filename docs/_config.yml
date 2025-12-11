@@ -5,7 +5,7 @@
 title: "Threads Desktop"
 description: "Official website for Threads Desktop — a simple, cross‑platform desktop client for Instagram Threads."
 baseurl: ""                   # Leave blank if publishing at the root
-url: "https://<your‑username>.github.io/<repo‑name>" # Replace with your GitHub Pages URL
+url: "https://DesktopApplicationsProvider.github.io/threads-desktop" # Replace with your GitHub Pages URL
 
 # =========================
 # Theme Configuration
@@ -56,5 +56,5 @@ exclude:
 # Build Settings
 # =========================
 
-#markdown: kramdown
+markdown: kramdown
 
