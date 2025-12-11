@@ -56,5 +56,5 @@ exclude:
 # Build Settings
 # =========================
 
-markdown: kramdown
+#markdown: kramdown
 
