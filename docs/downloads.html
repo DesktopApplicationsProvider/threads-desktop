@@ -20,7 +20,17 @@ permalink: /downloads/
   <div class="container">
     <h2>Official Releases</h2>
     <p>
-      Visit the project’s GitHub Releases page to download installers, portable builds, and archived versions:
+      Download directly latest version of Threads Desktop:
+    </p>
+    <ul>
+      <li>
+        <a href="https://github.com/DesktopApplicationsProvider/threads-desktop/releases/download/1.0/Threads.desktop.install.exe">
+          🔗 Download Threads Desktop 1.0.0 from GitHub
+        </a>
+      </li>
+    </ul>
+    <p>
+      Visit the project’s GitHub Releases page to download installers, builds, and archived versions:
     </p>
     <ul>
       <li>
@@ -34,13 +44,8 @@ permalink: /downloads/
     </p>
     <ul>
       <li>Windows installer executables</li>
-      <li>Portable ZIP distributions</li>
-      <li>Checksums & signature files</li>
       <li>Release notes for each version</li>
     </ul>
-    <p>
-      Be sure to choose the build that matches your operating system and hardware (32/64-bit, etc.).
-    </p>
   </div>
 </section>
 
@@ -53,8 +58,9 @@ permalink: /downloads/
       you can clone the repo and build locally from source:
     </p>
     <pre><code>$ git clone https://github.com/DesktopApplicationsProvider/threads-desktop.git
-$ cd threads-desktop
-# Follow local build instructions in README.md</code></pre>
+cd threads-desktop
+msbuild "Threads desktop\Threads desktop.sln" /p:Configuration=Release /p:SelfContained=True /p:PackageAsSingleFile=true /t:Publish /p:PublishDir=Publish
+makensis installer_script.nsi</code></pre>
     <p>
       This method gives you the latest development builds which may not be published yet on the official
       releases page.
@@ -74,7 +80,7 @@ $ cd threads-desktop
         Follow the project on GitHub and watch for new release notifications.
       </li>
       <li>
-        Check the <a href="{{ site.baseurl }}/changelog">Changelog</a> (if present) for historic release info.
+        Check the <a href="{{ site.baseurl }}/changelog">Changelog</a> for historic release info.
       </li>
     </ul>
   </div>
