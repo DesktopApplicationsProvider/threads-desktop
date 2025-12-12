@@ -57,7 +57,7 @@ permalink: /downloads/
       If you’d like to compile Threads Desktop yourself (for example, to test a feature or help contribute),
       you can clone the repo and build locally from source:
     </p>
-    <pre><code>$ git clone https://github.com/DesktopApplicationsProvider/threads-desktop.git
+    <pre><code>git clone https://github.com/DesktopApplicationsProvider/threads-desktop.git
 cd threads-desktop
 msbuild "Threads desktop\Threads desktop.sln" /p:Configuration=Release /p:SelfContained=True /p:PackageAsSingleFile=true /t:Publish /p:PublishDir=Publish
 makensis installer_script.nsi</code></pre>
