@@ -39,8 +39,8 @@ social:
 # =========================
 
 plugins:
-  - jekyll‑feed                # Optional, if you want RSS feed
-  - jekyll‑sitemap             # Optional
+  - jekyll-feed                # Optional, if you want RSS feed
+  - jekyll-sitemap             # Optional
 
 # =========================
 # Excludes & Includes
