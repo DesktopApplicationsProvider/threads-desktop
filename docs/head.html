@@ -1,0 +1,28 @@
+<!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+<!-- You can set your favicon here -->
+
+<!-- link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}" -->
+
+<!-- end custom head snippets -->
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+
+  <!-- your favicon -->
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
+  <!-- if you use PNG -->
+  <link rel="icon" type="image/png" href="{{ '/favicon.png' | relative_url }}">
+
+  <!-- existing theme things -->
+  {{ content_for_head }}
+</head>

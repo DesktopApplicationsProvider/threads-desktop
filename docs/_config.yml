@@ -41,6 +41,7 @@ social:
 plugins:
   - jekyll-feed                # Optional, if you want RSS feed
   - jekyll-sitemap             # Optional
+  - jekyll-seo-tag
 
 # =========================
 # Excludes & Includes
